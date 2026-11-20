@@ -1,27 +1,32 @@
 .parent{
 	display: flex;
 	flex-direction: column;
-	width: 200px;
-	height: 200px;
+	height: 400px;
 	background-color: Yellow;
 	gap: 20px;
 	
 }
 
 .child1{
-	width: 200px;
+	flex: 1;
 	height: 150px;
 	background-color: green;
 }
 
 .child2{
-	width: 200px;
+	flex: 1;
 	height: 150px;
 	background-color: blue;
 }
 
 .child3{
-	width: 200px;
+	flex: 1;
 	height: 150px;
 	background-color: red;
+}
+
+@media (min-width: 678px) {
+	.parent{
+		flex-direction: row;
+	}
 }
